@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 0 7%;
+    border-bottom: 2px solid  #69707D;
+    height: 90px;
+    width: 80%;
+}
+
+.nav {
+    display: flex;
+    width: 60%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav ul .sneakers {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav li {
+    font-size: 16px;
+    color: #ccc;
+    margin: 0;
+}
+
+.icon {
+    color: #69707D;
+}
+
+.profile {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.avatar {
+    display: flex;
+    width: 30px;
+    border-radius: 50px;
+    background-image: url('../../images/image-avatar.png');
+    background-size: cover;
+}

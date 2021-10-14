@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    width: 45%;
+    height: 90%;
+    margin: 0 5%;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.bigImage {
+    display: flex;
+    width: 80%;
+    height: 75%;
+    background-image: url('../../images/image-product-1.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+
+.smallImages {
+    display: flex;
+    width: 80%;
+    height: 20% ;
+    justify-content: space-between;
+}
+
+.smallImages .firstImage {
+    display: flex;
+    width: 20%;
+    background-image: url('../../images/image-product-1.png');
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.smallImages .secondImage {
+    display: flex;
+    width: 20%;
+    background-image: url('../../images/image-product-2.png');
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.smallImages .thirdImage {
+    display: flex;
+    width: 20%;
+    background-image: url('../../images/image-product-3.png');
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.smallImages .fourthImage {
+    display: flex;
+    width: 20%;
+    background-image: url('../../images/image-product-4.png');
+    background-size: cover;
+    border-radius: 10px;
+
+}

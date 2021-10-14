@@ -1,0 +1,25 @@
+.form {
+    width: 40%;
+    display: flex;
+    border-radius: 8px;
+}
+
+.form button {
+    color: #FF7E1B;
+    width: 30%;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.form input {
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}

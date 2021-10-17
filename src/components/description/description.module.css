@@ -1,18 +1,16 @@
 .container {
     display: flex;
-    width: 45%;
+    width: 46%;
     height: 90%;
-    margin: 0 5%;
     align-items: center;
 }
 
 .contents {
     display: flex;
     height: 90%;
-    width: 85%;
+    width: 70%;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .contents h4 {
@@ -33,32 +31,42 @@
 .price {
     display: flex;
     width: 40%;
-    height: 13%;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .price .discount {
     display: flex;
-    height: 35%;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+
+
 }
 
 .discount p {
     color: #FF7E1B;
-    background-color: #ccc;
-    border-radius: 4px;
+    background-color: #fae8db;
+    border-radius: 8px;
+    padding: 2px 5px;
+    margin: 0;
 }
+
+.discount h2 {
+    margin: 0;
+    margin-right: 15px;
+
+}
+
 .price .oldPrice {
     display: flex;
-    height: 35%;
     align-items: center;
+
 }
 
 .oldPrice p{
     text-decoration: line-through;
+    margin-top: 5px ;
 }
 
 .buttons {

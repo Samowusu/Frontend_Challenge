@@ -9,7 +9,7 @@ const QuantityButtons =() => {
     return (
         <form onSubmit={submitHandler} className={classes.form}> 
           <button>-</button>
-          <input value='0'/>
+          <input defaultValue='0'/>
           <button>+</button>
         </form>
     );

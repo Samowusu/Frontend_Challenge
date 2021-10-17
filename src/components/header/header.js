@@ -5,10 +5,11 @@ const Header = () => {
     return (
         <header className={classes.header}>
          <nav className={classes.nav}>
-          <ul>
-            <li className={classes.sneakers}>
+         <p className={classes.sneakers}>
              sneakers
-            </li>
+          </p>
+          <ul>
+        
             <li>
              Collections
             </li>

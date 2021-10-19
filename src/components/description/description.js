@@ -22,8 +22,8 @@ const Description = () => {
                  </span>
             </div>
             <div className={classes.buttons}>
-            <QuantityButtons/>
-            <AddToCartButton/>
+            <QuantityButtons className={classes.btns}/>
+            <AddToCartButton className={classes.btns}/>
             </div>
          </div>
         </div>

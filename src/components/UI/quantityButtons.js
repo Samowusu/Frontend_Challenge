@@ -1,13 +1,13 @@
 import classes from './quantityButtons.module.css';
 
-const QuantityButtons =() => {
+const QuantityButtons =(props) => {
 
     const submitHandler = event => {
         event.preventDefault();
     };
 
     return (
-        <form onSubmit={submitHandler} className={classes.form}> 
+        <form onSubmit={submitHandler} className={`${classes.form} ${props.className}`}> 
           <button>-</button>
           <input defaultValue='0'/>
           <button>+</button>

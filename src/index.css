@@ -20,4 +20,20 @@ code {
   align-items: center;
   justify-content: space-between;
   padding: 60px 0 ;
+  box-sizing: border-box;
+}
+
+@media (min-height : 900px) {
+  .layout {
+    height: 100vh;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+    padding: 0;
+  }
+  
 }

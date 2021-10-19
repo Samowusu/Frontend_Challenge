@@ -9,9 +9,34 @@
     width: 80%;
 }
 
+.toggleButton {
+    display: none;
+    width: 20px;
+    height: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+
+.toggleButton .bar {
+    height: 3px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #69707D;
+}
+
+
+.sneakers {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
 .nav {
     display: flex;
     width: 60%;
+    align-items: center;
 }
 
 .nav ul {
@@ -25,12 +50,6 @@
     flex-wrap: wrap;
 }
 
-.sneakers {
-    color: black;
-    font-size: 26px;
-    font-weight: bold;
-    margin-right: 50px;
-}
 
 .nav li {
     font-size: 16px;
@@ -54,4 +73,28 @@
     background-image: url('../../images/image-avatar.png');
     background-size: cover;
     margin-left: 30px;
+}
+
+@media (max-width : 600px) {
+    .header {
+        height: 50px;
+        border-bottom: none;
+    }
+
+    .sneakers {
+        margin-right: 10px;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .toggleButton {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .avatar {
+        margin-left: 10px;
+    }
 }

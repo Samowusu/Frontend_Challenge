@@ -27,4 +27,27 @@ ul {
   list-style-type: none;
 }
 
+.layout {
+  display: flex;
+  margin: 0 15%;
+  justify-content: space-between;
+  margin-top: 70px;
+  border: 2px solid green;
+}
+
+@media  (max-width : 768px) {
+  .layout {
+    flex-direction: column;
+    margin: 0 15%;
+    align-items: center;
+
+  }
+}
+
+@media (max-width : 480px) {
+  .layout {
+    flex-direction: column;
+    margin : 0
+  }
+}
 

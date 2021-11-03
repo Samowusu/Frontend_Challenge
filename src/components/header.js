@@ -1,12 +1,17 @@
 import classes from './header.module.css';
-// import cart from '../assets/images/icon-cart.svg';
-import { Store } from '../assets/store';
+import { extrasStore } from '../assets/store';
 
 
 const Header = (props) => {
     return (
         <header className={classes.header}>
-          <nav className={classes.nav}>  
+          <nav className={classes.nav}>
+          <img 
+            src={extrasStore.extras.toggleMenu} 
+            alt=''
+            className={classes.menu}
+          />
+          <img src={extrasStore.extras.sneakerLogo} alt='sneaker logo'/>  
           <ul>
             <li>Collections</li>
             <li>Men</li>   
@@ -15,7 +20,10 @@ const Header = (props) => {
             <li>Contact</li>   
           </ul>
           </nav>
-          <img src={Store.images.cartIcon} alt='a cart'/>
+          <section className={classes.profile}>
+          <img src={extrasStore.extras.cartIcon} alt='a cart'/>
+          <img className={classes.avatar} src={extrasStore.extras.avatar} alt='profile'/>
+          </section>
         </header>
     )
 };

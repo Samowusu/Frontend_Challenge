@@ -17,7 +17,7 @@ const ProductDescription = props => {
             <h2>$125.00</h2>
             <h5>50%</h5>
             </section>
-            <h5 className={classes.text}>$250.00</h5>
+            <h5 className={classes.actualPrice}>$250.00</h5>
             </div>
             <div className={classes.btns}>
             <QuantityButtons />

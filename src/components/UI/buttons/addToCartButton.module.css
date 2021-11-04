@@ -7,6 +7,7 @@
     font-weight: bold;
     border: none;
     cursor: pointer;
+    padding: 10px 0;
 }
 
 .btn img {
@@ -15,4 +16,10 @@
     width: 15px;
     height: 15px;
     filter: brightness(600%);
+}
+
+@media (max-width : 768px) {
+    .btn {
+        width: 100%;
+    }
 }

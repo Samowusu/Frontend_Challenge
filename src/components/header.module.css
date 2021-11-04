@@ -31,7 +31,7 @@
 
 .header .profile {
     display: flex;
-    width: 8%;
+    width: 120px;
     align-items: center;
     justify-content: space-between;
 }
@@ -63,6 +63,9 @@ img {
 }
 
 @media (max-width : 768px) {
+    .header {
+        padding: 0 40px;
+    }
     .header .nav {
         justify-content: flex-start;
         width: 400px;
@@ -78,6 +81,9 @@ img {
 }
 
 @media (max-width : 480px) {
+    .header {
+        padding: 0
+    }
     .header .nav {
         width: 200px;
     }

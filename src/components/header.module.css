@@ -44,7 +44,7 @@ img {
     height: 20%;
 }
 
-    @media (max-width : 1024px) {
+    @media (max-width : 1340px) {
         .header .nav {
             width: 600px;
         }

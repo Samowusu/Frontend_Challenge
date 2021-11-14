@@ -29,24 +29,33 @@ ul {
 
 .layout {
   display: flex;
-  margin: 0 15%;
-  justify-content: space-between;
   margin-top: 70px;
+  width: 100%;
+  justify-content: center;
+}
+
+.layout .layoutContainer {
+  display: flex;
+  width: clamp(320px, 90%, 960px);
+  justify-content: space-between;
 }
 
 @media  (max-width : 768px) {
   .layout {
+    margin: 0;
+  }
+
+  .layout .layoutContainer {
     flex-direction: column;
-    margin: 0 15%;
     align-items: center;
 
   }
 }
 
 @media (max-width : 480px) {
-  .layout {
+  .layout .layoutContainer{
     flex-direction: column;
-    margin : 0
+    width: 100%;
   }
 }
 

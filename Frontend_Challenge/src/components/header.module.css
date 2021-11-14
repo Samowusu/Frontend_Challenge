@@ -9,9 +9,7 @@
     display: flex;
     justify-content: space-between;
     height: 100px;
-    width: 90%;
-    max-width: 960px;
-    min-width: 320px;
+    width: clamp(320px, 90%, 960px);
     margin-top: 20px;
     border-bottom: 2px solid var(--light-grayish-blue);
 }
@@ -23,7 +21,6 @@
     flex: 1;
     max-width: 550px;
     padding: 0 2%;
-    border: 2px solid green;
 }
 
 .header .nav .menu {
@@ -70,6 +67,11 @@
 }
 
 @media (max-width : 768px) {
+
+    .header {
+        height: 70px;
+        border-bottom: none;
+    }
    
     .header .nav {
         justify-content: flex-start;

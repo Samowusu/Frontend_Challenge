@@ -1,13 +1,10 @@
 .container {
-    width: 40%;
+    width: 45%;
     display: flex;
-    align-items: center;
-
 }
 
 .container .contents {
-    width: 70%;
-    height: 65%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,6 +42,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 p {
@@ -53,22 +51,10 @@ p {
 }
 
 h4 {
+    margin-top: 40px;
     color: var(--orange);
 }
 
-@media (max-width : 1340px) {
-    .container {
-        width: 45%;
-    }
-
-    .container .contents {
-        width: 100%;
-    }
-
-    p  {
-        line-height: 20px;
-    }
-}
 
 @media (max-width : 768px) {
     .container {
@@ -77,18 +63,22 @@ h4 {
     }
 
     .container .contents {
-        width: 90%;
+        width: 100%;
     }
 
     .container .contents .btns {
         flex-direction: column;
         height: 100px;
+        margin: 0;
+        padding-right: 20px;
     }
 
     .container .contents .prices {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        padding-right: 20px;
+
     }
 
     .container .contents .prices section {
@@ -98,9 +88,13 @@ h4 {
     .container .contents .prices .actualPrice {
         margin-top: 3px;
     }
+
+    h1, h4 , p, .prices {
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width : 425px) {
+@media (max-width : 480px) {
     .container .contents .btns {
         height: 90px;
     }

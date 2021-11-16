@@ -6,6 +6,7 @@
   --light-grayish-blue : hsl(223,64%,98%);
   --white : hsl(0,0%,100%);
   --black : hsl(0,0%,0%);
+  --overlay-color :  rgba(0, 0, 0, 0.75);
   --mobile : 480px;
   --tablet : 768px;
   --laptop : 1024px;
@@ -47,8 +48,8 @@ ul {
 
   .layout .layoutContainer {
     flex-direction: column;
+    width: 100%;
     align-items: center;
-
   }
 }
 

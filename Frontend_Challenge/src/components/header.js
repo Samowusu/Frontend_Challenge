@@ -11,6 +11,7 @@ const Header = (props) => {
             src={extrasStore.extras.toggleMenu} 
             alt=''
             className={classes.menu}
+            onClick={props.onShowMenu}
           />
           <img src={extrasStore.extras.sneakerLogo} alt='sneaker logo'/>  
           <ul>

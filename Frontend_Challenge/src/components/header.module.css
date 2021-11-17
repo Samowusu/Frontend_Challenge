@@ -46,8 +46,9 @@
 }
 
 .header .nav ul li:hover {
-    border-bottom: 2px solid var(--orange);
+    border-bottom: 3px solid var(--orange);
     cursor: pointer;
+    color: var(--black);
 }
 
 

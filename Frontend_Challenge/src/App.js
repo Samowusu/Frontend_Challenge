@@ -3,7 +3,7 @@ import Header from './components/header';
 import Layout from './components/layout';
 import ProductDescription from './components/productDescription';
 import ProductImages from './components/productImages';
-import Modal from './components/UI/modals/modal';
+import MenuModal from './components/UI/modals/menuModal';
 
 function App() {
   const [menuIsShown, setMenuIsShown] = useState(false);
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-    {menuIsShown && <Modal onHideMenu={hideMenuHandler}/>}
+    {menuIsShown && <MenuModal onHideMenu={hideMenuHandler}/>}
     <Header onShowMenu={showMenuHandler}/>
     <Layout>
       <ProductImages/>

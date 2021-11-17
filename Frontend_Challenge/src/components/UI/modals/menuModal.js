@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import classes from './modal.module.css';
 
 const ModalOverlay = (props) => {
@@ -22,13 +23,14 @@ const Backdrop = (props) => {
     )
 };
 
-const Modal = props => {
+const portalElement = document.getElementById('overlays');
+const MenuModal = props => {
     return (
         <>
-        <ModalOverlay onClose={props.onHideMenu}/>
-        <Backdrop onClose={props.onHideMenu}/>
+        {ReactDOM.createPortal(<ModalOverlay onClose={props.onHideMenu}/>,portalElement)}
+        {ReactDOM.createPortal(<Backdrop onClose={props.onHideMenu}/>,portalElement)}
         </>
     );
 };
 
-export default Modal;
+export default MenuModal;

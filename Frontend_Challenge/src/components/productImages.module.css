@@ -38,8 +38,7 @@
 }
 
 .thumbnails img:hover{
-    filter: brightness(130%);
-    border: 2px solid var(--orange);
+    filter: brightness(140%);
 }
 
 img {

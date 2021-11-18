@@ -24,6 +24,10 @@
     font-weight: 700;
 }
 
+.container .slider button:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
 
 
 .thumbnails {

@@ -7,6 +7,7 @@
     left: 0;
     background-color: var(--white);
     padding-top: 20px;
+    visibility: hidden;
     /* animation: modalDisplay 1s ease-in forwards; */
 }
 
@@ -38,7 +39,14 @@
     height: 100vh;
     z-index: 2;
     background-color: var(--overlay-color);
+    visibility: hidden;
     /* animation: modalDisplay 1s ease-in forwards; */
+  }
+
+  @media (max-width : 768px){
+      .modal, .backdrop {
+          visibility: visible;
+      }
   }
 
   /* @keyframes modalDisplay {
@@ -50,5 +58,7 @@
           top: 0;
       }
   } */
+
+
 
  

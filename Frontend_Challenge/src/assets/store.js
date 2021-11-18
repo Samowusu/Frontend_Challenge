@@ -14,7 +14,7 @@ import minus from './images/icon-minus.svg';
 import menu from './images/icon-menu.svg';
 
 
-
+export const pictures = [prod1, prod2, prod3, prod4];
 
 export const imagesStore = { images : {
    

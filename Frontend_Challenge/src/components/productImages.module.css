@@ -45,15 +45,16 @@
     filter: brightness(140%);
 }
 
-img {
+.img {
     cursor: pointer;
     border-radius: 8px;
+    width: 100%;
 }
 
 
 @media (max-width : 768px) {
     .container {
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
     }
 
@@ -72,6 +73,9 @@ img {
 }
 
 @media (max-width : 480px) {
+    .container {
+        width: 100%;
+    }
     .container, .container img {
         border-radius: 0;
     }

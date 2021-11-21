@@ -24,6 +24,8 @@ export const imagesStore = { images : {
     imageProductFour : prod4
 }};
 
+export const thumbnails = [tn1, tn2, tn3, tn4];
+
 export const thumbnailsStore = { thumbnails : {
     thumbnailOne : tn1,
     thumbnailTwo : tn2,

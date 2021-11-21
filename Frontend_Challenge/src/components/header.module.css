@@ -42,7 +42,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    transition: border-bottom 0.1s ease-in;
+    transition: border-bottom 0.2s ease-in;
 }
 
 .header .nav ul li:hover {

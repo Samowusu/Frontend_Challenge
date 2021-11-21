@@ -83,6 +83,7 @@ h4 {
 
     .container .contents .prices section {
         width: 60%;
+        max-width: 140px;
     }
 
     .container .contents .prices .actualPrice {
@@ -97,5 +98,9 @@ h4 {
 @media (max-width : 480px) {
     .container .contents .btns {
         height: 90px;
+    }
+
+    .container .contents .prices h5{
+        margin-left: 10px;
     }
 }

@@ -1,0 +1,106 @@
+.container {
+    width: 45%;
+    display: flex;
+}
+
+.container .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .contents .prices {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container .contents .prices section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.container .contents .prices section h5 {
+    color: var(--orange);
+    background-color: var(--pale-orange);
+    border-radius: 6px;
+    width: 25%;
+    height: 22px;
+    text-align: center;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+.container .contents .prices .actualPrice {
+    color: var(--grayish-blue);
+    text-decoration: line-through;
+}
+
+.container .contents .btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+p {
+    color: var(--grayish-blue);
+    line-height: 25px;
+}
+
+h4 {
+    margin-top: 40px;
+    color: var(--orange);
+}
+
+
+@media (max-width : 768px) {
+    .container {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .container .contents {
+        width: 100%;
+    }
+
+    .container .contents .btns {
+        flex-direction: column;
+        height: 100px;
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    .container .contents .prices {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 20px;
+
+    }
+
+    .container .contents .prices section {
+        width: 60%;
+        max-width: 140px;
+    }
+
+    .container .contents .prices .actualPrice {
+        margin-top: 3px;
+    }
+
+    h1, h4 , p, .prices {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width : 480px) {
+    .container .contents .btns {
+        height: 90px;
+    }
+
+    .container .contents .prices h5{
+        margin-left: 10px;
+    }
+}
